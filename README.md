@@ -1,0 +1,1 @@
+Application example of using ws-request-hook.
