@@ -23,9 +23,10 @@ export default function BroadcastMessage() {
     }
 
     return (
-        <div className="border border-red-500 h-32">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                onClick={() => broadcast()}>click to broadcast message to clients
+        <div >
+            <button className="btn btn-primary"
+                onClick={() => broadcast()}>and then click here to broadcast
+                (also test with multiple browsers)
             </button>
         </div>
     );

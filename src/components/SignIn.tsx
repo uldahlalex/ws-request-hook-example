@@ -16,7 +16,6 @@ export default function SignIn() {
     };
 
     return (<>
-        <div className="border border-red-500">auth component</div>
-        <button onClick={signIn}>sign in</button>
+        <button className="btn btn-secondary" onClick={signIn}>click this first to sign in</button>
     </>)
 }

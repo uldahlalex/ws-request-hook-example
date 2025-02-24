@@ -9,7 +9,7 @@ export default function ListenToMessages() {
         readyState
     } = useWsClient();
 
-    const [receivedMessage, setReceivedMessage] = useState<string>("Waiting for broadcast");
+    const [receivedMessage, setReceivedMessage] = useState<string>("Waiting for broadcast...");
 
     useEffect(() => {
         if (readyState != 1) return;
@@ -27,13 +27,15 @@ export default function ListenToMessages() {
     }
 
 
-    return (<>
-            <div className="border border-red-500">
+    return (<div className="p-10">
+            <div className="mb-10">
                 <div data-testid="broadcast-message">{receivedMessage}</div>
             </div>
 
-            <div>Ready state: {readyState}</div>
-        </>
+            <div className="card-title">Ready state: {readyState}</div>
+            <div>(0 = connection, 1 = connected, 2 = closing, 3 = closed)
+            </div>
+        </div>
 
     );
 }

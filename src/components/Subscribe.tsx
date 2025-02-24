@@ -19,7 +19,6 @@ export default function SubscribeToTopic() {
         console.log(subscribeResult)
     }
     return (<>
-        <div className="border border-red-500">sub component</div>
-        <button onClick={subscribeToTopic}>sub to topic</button>
+        <button className="btn btn-teritary" onClick={subscribeToTopic}>then click this to subscribe to broadcast</button>
     </>)
 }

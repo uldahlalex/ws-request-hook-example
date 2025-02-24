@@ -6,7 +6,7 @@ import App from "./components/App.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-      <WsClientProvider url="ws://localhost:8080/">
+      <WsClientProvider url="wss://fs25-267099996159.europe-north1.run.app/">
           <App />
       </WsClientProvider>
   </StrictMode>,

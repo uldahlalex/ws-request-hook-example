@@ -4,11 +4,11 @@ import ListenToMessages from "./ListenToMessages.tsx";
 import SubscribeToTopic from "./Subscribe.tsx";
 
 export default function App() {
-    return(<>
-        <BroadcastMessage />
+    return(<div className="flex flex-col">
         <Auth />
         <SubscribeToTopic />
+        <BroadcastMessage />
         <ListenToMessages />
 
-    </>)
+    </div>)
 }
