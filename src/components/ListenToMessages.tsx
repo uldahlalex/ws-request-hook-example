@@ -32,7 +32,7 @@ export default function ListenToMessages() {
                 <div data-testid="broadcast-message">{receivedMessage}</div>
             </div>
 
-            <div>{readyState}</div>
+            <div>Ready state: {readyState}</div>
         </>
 
     );
